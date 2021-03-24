@@ -39,14 +39,14 @@ export default {
       followers: 0,
       user: {
         id: 1, 
-        username: '_MitchelRomney',
-        firstName: 'Mitchell',
-        lastName: 'Romney', 
+        username: '_JoshuaCarey',
+        firstName: 'Joshua',
+        lastName: 'Carey', 
         email: 'example@example.com',
         isAdmin: true,
         twoots: [
-          { id: 1, content: "Twotter is amazing!" },
-          { id: 2, content: "Hello JC!" }
+          { id: 1, content: "Twotter is coolio!" },
+          { id: 2, content: "Hello Mutliverse!" }
         ]
       }
     }
