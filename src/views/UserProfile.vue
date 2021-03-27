@@ -13,10 +13,10 @@
       <CreateTwootPanel @add-twoot="addTwoot"/>
     </div>
       <div class="user-profile__twoots-wrapper">
-        <TwootItem 
-          v-for="twoot in state.user.twoots" 
-          :key="twoot.id" 
-          :username="state.user.username" 
+        <TwootItem
+          v-for="twoot in state.user.twoots"
+          :key="twoot.id"
+          :username="state.user.username"
           :twoot="twoot" 
         />
       </div>
@@ -41,8 +41,9 @@ export default {
 
     const state = reactive({
       followers: 0,
-      user: users[userId.value - 1] || users[0]
+      user: users[userId.value] || users[0]
     })
+
 
     function addTwoot(twoot) {
       state.user.twoots.unshift({
